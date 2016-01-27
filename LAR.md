@@ -5,8 +5,8 @@ date: 2016-01-27
 
 Linear Algebra
 ========================================================
-> "Linear algebra is the branch of mathematics concerning vector 
-spaces and linear mappings between such spaces. It includes the 
+> "Linear algebra is the branch of mathematics concerning vector
+spaces and linear mappings between such spaces. It includes the
 study of lines, planes, and subspaces, but is also concerned with properties common to all vector spaces."
 
 *https://en.wikipedia.org/wiki/Linear_algebra*
@@ -184,10 +184,10 @@ Matrix Math
 ========================================================
 Addition to a scalar
 
-$$ 
+$$
 \begin{bmatrix}
 1 & 3 \\
-2 & 4 
+2 & 4
 \end{bmatrix}
 + 1
 $$
@@ -207,15 +207,15 @@ Matrix Math continued
 ========================================================
 Addition to a vector
 
-$$ 
+$$
 \begin{bmatrix}
-1 & 3 \\ 
-2 & 4 
-\end{bmatrix} 
-+ 
+1 & 3 \\
+2 & 4
+\end{bmatrix}
++
 \begin{pmatrix}
-20 \\ 
-30 
+20 \\
+30
 \end{pmatrix}
 $$
 
@@ -234,15 +234,15 @@ Matrix Math
 ========================================================
 Addition to a matrix
 
-$$ 
+$$
 \begin{bmatrix}
 1 & 3 \\
-2 & 4 
-\end{bmatrix} 
+2 & 4
+\end{bmatrix}
 +
 \begin{bmatrix}
 100 & 300 \\
-200 & 400 
+200 & 400
 \end{bmatrix}
 $$
 
@@ -261,10 +261,10 @@ Matrix Math
 ========================================================
 Multiplication by a scalar
 
-$$ 
+$$
 \begin{bmatrix}
 1 & 3 \\
-2 & 4 
+2 & 4
 \end{bmatrix}
 \times 2
 $$
@@ -288,20 +288,20 @@ Matrix Product (Normal Matrix Multiplication)
 - Traditional matrix product
 - Associative and distrubitive
 
-$$ 
+$$
 \begin{bmatrix}
 1 & 3 \\
-2 & 4 
+2 & 4
 \end{bmatrix}
 \times
 \begin{bmatrix}
 1 & 2 \\
-1 & 2 
+1 & 2
 \end{bmatrix}
 =
 \begin{bmatrix}
 4 & 8 \\
-6 & 12 
+6 & 12
 \end{bmatrix}
 $$
 
@@ -318,20 +318,20 @@ Hadamard Product (Element-Wise Multiplication)
 - 1 for 1 multiplication
 - associative, distrubutive, and commutative
 
-$$ 
+$$
 \begin{bmatrix}
 1 & 3 \\
-2 & 4 
+2 & 4
 \end{bmatrix}
 \circ
 \begin{bmatrix}
 1 & 2 \\
-1 & 2 
+1 & 2
 \end{bmatrix}
 =
 \begin{bmatrix}
 1 & 6 \\
-2 & 8 
+2 & 8
 \end{bmatrix}
 $$
 
@@ -347,14 +347,14 @@ Matrix Math continued
 ========================================================
 Matrix product with a vector
 
-$$ 
+$$
 \begin{bmatrix}
-1 & 3 \\ 
-2 & 4 
-\end{bmatrix} 
-\times 
+1 & 3 \\
+2 & 4
+\end{bmatrix}
+\times
 \begin{pmatrix}
-20 \\ 30 
+20 \\ 30
 \end{pmatrix}
 $$
 
@@ -373,14 +373,14 @@ Matrix Math continued
 ========================================================
 Hadamard product with a vector
 
-$$ 
+$$
 \begin{bmatrix}
-1 & 3 \\ 
-2 & 4 
-\end{bmatrix} 
+1 & 3 \\
+2 & 4
+\end{bmatrix}
 \circ
 \begin{pmatrix}
-20 \\ 30 
+20 \\ 30
 \end{pmatrix}
 $$
 
@@ -399,15 +399,15 @@ Matrix Math continued
 ========================================================
 Matrix product by a matrix
 
-$$ 
+$$
 \begin{bmatrix}
 1 & 3 \\
-2 & 4 
-\end{bmatrix} 
+2 & 4
+\end{bmatrix}
 \times
 \begin{bmatrix}
 100 & 300 \\
-200 & 400 
+200 & 400
 \end{bmatrix}
 $$
 
@@ -426,15 +426,15 @@ Matrix Math continued
 ========================================================
 Hadamard product by a matrix
 
-$$ 
+$$
 \begin{bmatrix}
 1 & 3 \\
-2 & 4 
-\end{bmatrix} 
+2 & 4
+\end{bmatrix}
 \circ
 \begin{bmatrix}
 100 & 300 \\
-200 & 400 
+200 & 400
 \end{bmatrix}
 $$
 
@@ -453,12 +453,12 @@ Identity Matrix
 ========================================================
 - n x n (must by square) matrix
 
-$$ 
+$$
 \begin{bmatrix}
 1 & 4 & 7 \\
 2 & 5 & 8 \\
 3 & 6 & 9
-\end{bmatrix} 
+\end{bmatrix}
 \times
 \begin{bmatrix}
 1 & 0 & 0 \\
@@ -470,7 +470,7 @@ $$
 1 & 4 & 7 \\
 2 & 5 & 8 \\
 3 & 6 & 9
-\end{bmatrix} 
+\end{bmatrix}
 $$
 
 
@@ -487,11 +487,11 @@ matrix(1:9, ncol = 3) %*% diag(3)
 
 Ones Matrix
 ========================================================
-$$ 
+$$
 \begin{bmatrix}
 1 & 1 & 1 \\
-1 & 1 & 1 
-\end{bmatrix} 
+1 & 1 & 1
+\end{bmatrix}
 $$
 
 
@@ -513,7 +513,7 @@ $$
 \begin{bmatrix}
 1 & 4 \\
 2 & 5 \\
-3 & 6 
+3 & 6
 \end{bmatrix}'
 =
 \begin{bmatrix}
@@ -535,15 +535,15 @@ t(X3)
 
 Inverse
 ========================================================
-$$ 
+$$
 \begin{bmatrix}
 1 & 3 \\
-2 & 4 
-\end{bmatrix} 
+2 & 4
+\end{bmatrix}
 \times
 \begin{bmatrix}
 -2 & 1.5 \\
-1 & -0.5 
+1 & -0.5
 \end{bmatrix}
 =
 \begin{bmatrix}
@@ -608,13 +608,13 @@ Name Dimensions
 
 
 ```r
-housing = matrix(c(1,1,1,1,2,4,800,1200,2200), 
+housing = matrix(c(1,1,1,1,2,4,800,1200,2200),
                  ncol = 3,
                  dimnames = list(
                    c('studio',
                      'starter',
                      'family'),
-                   c('constant', 
+                   c('constant',
                      'beds', 'sqft')))
 housing
 ```
@@ -633,11 +633,11 @@ Practical Example
 pricing_models = matrix(c(10000,20000,
                           5000,10000,
                           90,95),
-                        ncol = 2, 
+                        ncol = 2,
                         byrow = TRUE,
-                        dimnames = 
+                        dimnames =
                           list(c('base','bed','sqft'), NULL))
-pricing_models                        
+pricing_models
 ```
 
 ```
@@ -649,9 +649,11 @@ sqft    90    95
 
 Practical Example continued
 ========================================================
+Consider the simplicity (and computational efficiency) vs a loop approach
+
 
 ```r
-housing %*% pricing_models                        
+housing %*% pricing_models
 ```
 
 ```
@@ -659,6 +661,72 @@ housing %*% pricing_models
 studio   87000 106000
 starter 128000 154000
 family  228000 269000
+```
+
+Normal Equation
+========================================================
+* $\theta$ is the line of best fit
+* X is the data
+* y is the vector of outputs
+* $X^{-1}$ is the inverse of a matrix
+
+$$
+\theta = (X' \times X)^{-1} \times X' \times y
+$$
+
+https://en.wikipedia.org/wiki/Linear_least_squares_(mathematics)
+
+Normal Equation in R
+========================================================
+$$
+\theta = (X' \times X)^{-1} \times X' \times y
+$$
+
+
+```r
+actuals = c(75000, 120000, 180000)
+
+theta = ginv(t(housing) %*% housing) %*% t(housing) %*% actuals
+
+dimnames(theta) <- list(c('base', 'bed', 'sqft'),NULL)
+theta
+```
+
+```
+             [,1]
+base  16067.76296
+bed  -10302.48758
+sqft     94.81868
+```
+
+Normal Equation Applied
+========================================================
+Known Actuals
+
+
+```r
+housing %*% theta
+```
+
+```
+             [,1]
+studio   81620.22
+starter 109245.20
+family  183458.90
+```
+
+Normal Equation Applied
+========================================================
+Prediction
+
+```r
+mansion = c(1, bed = 10, sqft = 8000)
+mansion %*% theta
+```
+
+```
+         [,1]
+[1,] 671592.3
 ```
 
 Resources and Additional Sources
@@ -670,4 +738,3 @@ Resources and Additional Sources
 * https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms
 * https://en.wikipedia.org/wiki/Linear_algebra
 * https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations
-
