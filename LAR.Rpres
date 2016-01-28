@@ -1,6 +1,6 @@
 Linear Algebra in R
 ========================================================
-author: Tim Hoolihan
+author: Tim Hoolihan (tim@hoolihan.net)
 date: 2016-01-27
 
 Linear Algebra
