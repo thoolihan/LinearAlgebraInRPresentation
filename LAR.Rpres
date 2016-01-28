@@ -238,9 +238,9 @@ Matrix Math continued
 ========================================================
 Warning
 
-You usually want %*% when working with a matrix, and you will forget this.
+You usually want `%*%` when working with a matrix, and you will forget this.
 
-In this sense, Matlab (or Octave) handles this better with * being the matrix product, and .* being the Hadamard product.
+In this sense, Matlab (or Octave) handles this better with * being the more common matrix product, and .* being Element-wise product.
 
 Matrix Math continued
 ========================================================
@@ -444,7 +444,7 @@ pricing_models = matrix(c(10000,20000,
                         ncol = 2,
                         byrow = TRUE,
                         dimnames =
-                          list(c('base','bed','sqft'), NULL))
+                          list(c('base','bed','sqft'), c('model1', 'model2')))
 pricing_models
 ```
 
@@ -480,7 +480,7 @@ actuals = c(75000, 120000, 180000)
 
 theta = ginv(t(housing) %*% housing) %*% t(housing) %*% actuals
 
-dimnames(theta) <- list(c('base', 'bed', 'sqft'),NULL)
+dimnames(theta) <- list(c('base', 'bed', 'sqft'),c('$'))
 theta
 ```
 
@@ -496,7 +496,7 @@ Normal Equation Applied
 ========================================================
 Prediction
 ```{r}
-mansion = c(1, bed = 10, sqft = 8000)
+mansion = c(constant = 1, bed = 10, sqft = 8000)
 mansion %*% theta
 ```
 

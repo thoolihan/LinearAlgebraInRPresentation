@@ -339,9 +339,9 @@ Matrix Math continued
 ========================================================
 Warning
 
-You usually want %*% when working with a matrix, and you will forget this.
+You usually want `%*%` when working with a matrix, and you will forget this.
 
-In this sense, Matlab (or Octave) handles this better with * being the matrix product, and .* being the Hadamard product.
+In this sense, Matlab (or Octave) handles this better with * being the more common matrix product, and .* being Element-wise product.
 
 Matrix Math continued
 ========================================================
@@ -636,15 +636,15 @@ pricing_models = matrix(c(10000,20000,
                         ncol = 2,
                         byrow = TRUE,
                         dimnames =
-                          list(c('base','bed','sqft'), NULL))
+                          list(c('base','bed','sqft'), c('model1', 'model2')))
 pricing_models
 ```
 
 ```
-      [,1]  [,2]
-base 10000 20000
-bed   5000 10000
-sqft    90    95
+     model1 model2
+base  10000  20000
+bed    5000  10000
+sqft     90     95
 ```
 
 Practical Example continued
@@ -657,7 +657,7 @@ housing %*% pricing_models
 ```
 
 ```
-          [,1]   [,2]
+        model1 model2
 studio   87000 106000
 starter 128000 154000
 family  228000 269000
@@ -688,12 +688,12 @@ actuals = c(75000, 120000, 180000)
 
 theta = ginv(t(housing) %*% housing) %*% t(housing) %*% actuals
 
-dimnames(theta) <- list(c('base', 'bed', 'sqft'),NULL)
+dimnames(theta) <- list(c('base', 'bed', 'sqft'),c('$'))
 theta
 ```
 
 ```
-             [,1]
+                $
 base  16067.76296
 bed  -10302.48758
 sqft     94.81868
@@ -709,7 +709,7 @@ housing %*% theta
 ```
 
 ```
-             [,1]
+                $
 studio   81620.22
 starter 109245.20
 family  183458.90
@@ -720,12 +720,12 @@ Normal Equation Applied
 Prediction
 
 ```r
-mansion = c(1, bed = 10, sqft = 8000)
+mansion = c(constant = 1, bed = 10, sqft = 8000)
 mansion %*% theta
 ```
 
 ```
-         [,1]
+            $
 [1,] 671592.3
 ```
 
